@@ -1,0 +1,40 @@
+.services {
+  padding: 70px 0;
+  
+  @include media-breakpoint-up(lg) {
+    padding: 68px 0 80px;
+  }
+
+  @include media-breakpoint-up('3xl') {
+    padding: 118px 0 130px;
+  }
+  
+  .item__image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 67.221%;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-up('3xl') {
+      margin-bottom: 39px;
+    }
+  }
+
+  .item__title {
+    text-transform: uppercase;
+    margin-bottom: 6px;
+
+    @include media-breakpoint-up('3xl') {
+      margin-bottom: 23px;
+    }
+  }
+
+  .description {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,35 @@
+.contact {
+  padding: 100px 0 57px;
+
+  .sec__image {
+    height: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .sec__content {
+    max-width: 705px;
+    width: 100%;
+    margin: 0 auto;
+
+    .description {
+      color: $fill-grey-v2;
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+.reservation__banner {
+  background-color: #000;
+  padding: 131px 0;
+  text-align: center;
+  
+  h2 {
+    @include heading_sm;
+    color: $brand-primary;
+    margin-bottom: 0;
+  }
+}

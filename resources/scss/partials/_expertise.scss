@@ -1,0 +1,76 @@
+.expertise {
+  padding-top: 70px;
+  text-align: center;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+  }
+
+  @include media-breakpoint-up('3xl') {
+    padding-top: 183px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 50px;
+    }
+  
+    @include media-breakpoint-up('3xl') {
+      margin-bottom: 68px;
+    }
+  }
+  
+  .expertise__list {
+
+    & > div {
+      margin-bottom: 50px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 70px;
+      }
+    
+      @include media-breakpoint-up('3xl') {
+        margin-bottom: 101px;
+      }
+    }
+  }
+
+  .list__item {
+    max-width: 369px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .item__image {
+    max-width: 180px;
+    width: 100%;
+    margin: 0 auto 30px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 230px;
+    }
+  
+    @include media-breakpoint-up('3xl') {
+      max-width: 336px;
+      margin: 0 auto 54px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .item__title {
+    margin-bottom: 10px;
+  
+    @include media-breakpoint-up('3xl') {
+      margin-bottom: 23px;
+    }
+  }
+
+  .item__description {
+    margin-bottom: 0;
+  }
+}

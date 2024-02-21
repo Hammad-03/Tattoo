@@ -1,0 +1,112 @@
+.portfolio {
+  padding: 70px 0;
+
+  @include media-breakpoint-up('3xl') {
+    padding: 94px 0 157px;
+  }
+
+  .portfolio__tabs--outer {
+    margin-bottom: 70px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 100px;
+    }
+
+    @include media-breakpoint-up('3xl') {
+      margin-bottom: 133px;
+    }
+  }
+
+  .portfolio__tabs {
+    margin-bottom: 20px;
+    border: none;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 40px;
+    }
+
+    @include media-breakpoint-up('3xl') {
+      margin-bottom: 99px;
+    }
+    
+    .nav-link {
+      @include heading_sm;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      color: $body-color;
+      margin-right: 15px;
+      transition: 0.3s all ease;
+
+      @include media-breakpoint-up(lg) {
+        margin-right: 30px;
+      }
+  
+      @include media-breakpoint-up('3xl') {
+        margin-right: 58px;
+      }
+
+      @include media-breakpoint-down(xl) {
+        @include font-format(16px, 25px);
+      }
+
+      &:hover:not(.active) {
+        color: $brand-primary;
+      }
+
+      &.active {
+        opacity: 0.5;
+      }
+    }
+  }
+
+
+
+  .list__item {
+
+    .item__image {
+      @include cover-overlay();
+      background-size: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding-bottom: 100%;
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: 0.3s all ease;
+  
+      @include media-breakpoint-up('3xl') {
+        margin-right: 32px;
+      }
+
+      &::after {
+        opacity: 0;
+        transition: 0.3s all ease;
+      }
+    }
+
+    .item__title {
+      color: $body-color;
+    }
+
+    .item__description {
+      margin-bottom: 0;
+      color: $body-color;
+    }
+
+    &:hover {
+
+      .item__image {
+        background-size: 110%;
+  
+        img {
+          transform: scale(1.08);
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }  
+
+    }
+  }
+}

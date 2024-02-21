@@ -1,0 +1,121 @@
+footer {
+    padding: 70px 0 70px;
+    background-color: $body-color;
+    
+      @include media-breakpoint-up('3xl') {
+        padding: 105px 0 170px;
+      }
+
+    .logo {
+        max-width: 90px;
+        width: 100%;
+        margin: 0 auto 30px;
+        display: block;
+
+        @include media-breakpoint-up(lg) {
+            max-width: 120px;
+            margin: 0 auto 50px;
+        }
+
+        @include media-breakpoint-up('3xl') {
+            max-width: 176px;
+            margin: 0 auto 85px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .social__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 70px;
+        }
+
+        @include media-breakpoint-up('3xl') {
+            margin-bottom: 108px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 0 10px;
+
+            svg {
+                height: 20px;
+                width: 20px;
+
+                @include media-breakpoint-up(lg) {
+                    height: 30px;
+                    width: 30px;
+                }
+        
+                @include media-breakpoint-up('3xl') {
+                    height: 40px;
+                    width: 40px;
+                    margin: 0 22.5px;
+                }
+                
+                path {
+                    transition: 0.3s all ease;
+                }
+            }
+
+            &:hover {
+
+                svg {
+                
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        li {
+            margin: 10px 20px;
+
+            @include media-breakpoint-up(lg) {
+                margin: 5px 20px;
+            }
+
+            a {
+                @include font-format(18px);
+                color: #fff;
+                font-family: $headings-font-family;
+                transition: 0.3s all ease;
+
+                @include media-breakpoint-up(lg) {
+                    @include font-format(20px);
+                }
+        
+                @include media-breakpoint-up('3xl') {
+                    @include font-format(30px);
+                }
+
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+}

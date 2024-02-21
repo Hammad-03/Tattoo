@@ -1,0 +1,27 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,400;0,500;1,400;1,500&family=Crimson+Text:ital,wght@0,700;1,700&display=swap');
+
+$font-family-base: 'Barlow', sans-serif;
+$font-family-secondary: 'Crimson Text', serif;
+$headings-font-family: 'Anton', sans-serif;
+
+// Colors
+$body-color: #1C1C1C;
+$brand-primary: #CCA36F;
+$brand-secondary: $brand-primary;
+$btn-hover: lighten($brand-primary, 5);
+$link-color: $brand-primary;
+$link-hover: darken($brand-primary, 20);
+$fill-grey-light: #f4f4f4;
+$fill-grey-v2: #555555;
+
+$fill-black-v1: #2c2927;
+
+/* Font Weights for Google Fonts */
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+$fw-black: 900;

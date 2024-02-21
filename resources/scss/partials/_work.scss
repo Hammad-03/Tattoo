@@ -1,0 +1,119 @@
+.work {
+  padding: 70px 0;
+  background-color: $body-color;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    padding: 100px 0;
+  }
+
+  @include media-breakpoint-up('3xl') {
+    padding: 120px 0 100px;
+  }
+
+  &:before {
+    content: '';
+    height: 200px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: -2px;
+
+    @include media-breakpoint-up-custom(480px) {
+      height: 280px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      height: 300px;
+    }
+
+    @include media-breakpoint-up(md) {
+      height: 340px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 430px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      height: 450px;
+    }
+  
+    @include media-breakpoint-up('3xl') {
+      height: 497px;
+    }
+  }
+
+  .inner {
+    max-width: 1356px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .work__video {
+    position: relative;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 50px;
+    }
+  
+    @include media-breakpoint-up('3xl') {
+      margin-bottom: 79px;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      min-height: 240px;
+
+      @include media-breakpoint-up-custom(480px) {
+        min-height: 320px;
+      }
+
+      @include media-breakpoint-up(sm) {
+        min-height: 380px;
+      }
+
+      @include media-breakpoint-up(md) {
+        min-height: 440px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        min-height: 500px;
+      }
+    
+      @include media-breakpoint-up('3xl') {
+        min-height: 670px;
+      }
+    }
+
+    .play__btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    &:hover {
+      
+      .play__btn {
+        border-color: #fff;
+        background-color: rgba($color: $brand-primary, $alpha: 0.8);
+        
+        &:after {
+          border-left-color: #fff;
+        }
+      }
+    }
+  }
+
+  .description {
+    text-align: center;
+    color: #fff;
+    max-width: 1228px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

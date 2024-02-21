@@ -1,0 +1,53 @@
+.about {
+  padding: 70px 0;
+  background-color: $body-color;
+
+  @include media-breakpoint-up(lg) {
+    padding: 100px 0;
+  }
+
+  @include media-breakpoint-up('3xl') {
+    padding: 153px 0;
+  }
+
+  .about__image {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0px;
+    }
+    
+    img {
+      width: 100%;
+      min-height: initial;
+      object-fit: cover;
+      
+      @include media-breakpoint-up(lg) {
+        min-height: 500px;
+      }
+    
+      @include media-breakpoint-up('3xl') {
+        min-height: 684px;
+      }
+    }
+  }
+
+  .about__content {
+    color: #fff;
+    width: 100%;
+    
+    @include media-breakpoint-up(lg) {
+      max-width: 651px;
+      margin: 0 auto;
+    }
+
+    .description {
+      margin-bottom: 30px;
+      color: #fff;
+
+      @include media-breakpoint-up('3xl') {
+        margin-bottom: 69px;
+      }
+    }
+  }
+}
